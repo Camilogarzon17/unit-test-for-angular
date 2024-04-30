@@ -1,0 +1,11 @@
+<section class="container">
+  <h1>Products component</h1>
+  <div class="my-grid">
+    <figure *ngFor="let Product of products">
+      <img [src]="getFirstImage(Product.images)" alt="" style="width: 90%;">
+      <figcaption>
+        {{Product.title}} - $ {{Product.price}}
+      </figcaption>
+    </figure>
+  </div>
+</section>
