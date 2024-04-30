@@ -13,4 +13,4 @@ jobs:
       - name: Install
         run: npm ci
       - name: run tests npm i g @angular/cli
-        run: ng test -- --no-watch --code-coverage --browsers=ChromeHeadlessCI
+        run: npx ng test -- --no-watch --code-coverage --browsers=ChromeHeadlessCI
