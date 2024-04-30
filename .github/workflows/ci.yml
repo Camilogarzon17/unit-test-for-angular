@@ -4,13 +4,13 @@ jobs:
   unit-test:
     runs-on: ubuntu-latest
     steps:
-      - name: Clone
-        uses: actions/checkout@v2
+      - name: Cone
+        uses: actions/checkout@v3
       - name: Node Setup
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
-          node-version: 14.x
-      - name: Install
+          node-version: 16.x
+      - name: Install dependencies
         run: npm ci
-      - name: run tests npm i g @angular/cli
-        run: npm rrun test -- --no-watch --code-coverage --browsers=ChromeHeadlessCI
+      - name: Run tests
+              run: npx ng test --no-watch --code-coverage --browsers=ChromeHeadlessCI
